@@ -16,3 +16,35 @@ body {
 	background-color: var(--bg-color);
 	color: var(--text-color);
 }
+.head {
+	position: fixed;
+	top: 0;
+	display: flex;
+	padding: 1.5em;
+	/* border: 0.2em solid blue; */
+	width: 100%;
+	justify-content: space-between;
+}
+.navbar {
+	display: flex;
+	gap: 2.5em;
+}
+.navbar a {
+	font-size: 24px;
+	color: var(--text-color);
+}
+.navbar a:hover, .navbar .colored {
+	color: var(--main-color);
+}
+.navbar a:hover {
+	/* transition: all ease-in-out;  */
+	/* text-shadow: 5px 50p; */
+	font-size: 25px;
+} 
+.logga {
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+.logga span {
+	color: var(--main-color);
+}
