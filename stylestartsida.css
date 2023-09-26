@@ -11,6 +11,8 @@
 	--main-color: #2AA3D2; 
 	--big-font: 6rem;
 	--p-font: 1.3rem;
+	--headline-style: 'Oswald', sans-serif;
+	--body-style: 'Raleway', sans-serif;
 }
 body {
 	background-color: var(--bg-color);
@@ -68,6 +70,7 @@ body {
 	padding: 2em;
     background-color: gray;
     border-radius: 2em;
+	/*box-shadow: 5px 4px 9px 1px black;*/
     /* border: 3px dashed lightskyblue;*/
 }
 .container > div > h1, .container > div > p{
@@ -76,9 +79,17 @@ body {
 }
 .container > div >h1{
 	text-align: center;
+	font-family: var(--headline-style);
+	font-weight: 600;
+	font-size: 36px;
 }
 .container > div >p{
 	padding: 0.5em;
+	font-family: var(--body-style);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 130%;
+	text-wrap: wrap;
 }
 .container-inside{
 	display:flex;
@@ -91,7 +102,7 @@ body {
 	background-color: whitesmoke;
 	border-radius: 1em;
 	text-align: center;
-	margin-top: 10em;
+	margin-top: 2em;
 	padding: 0.3em;
 	border: 2px solid gray;
 
