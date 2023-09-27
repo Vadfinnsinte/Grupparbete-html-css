@@ -48,3 +48,30 @@ body {
 .logga span {
 	color: var(--main-color);
 }
+
+/* Main-produkt startar  */
+
+.main-container {
+	display: flex;
+	margin: 4em 12em;
+	/* margin: auto; */
+	justify-content: space-around;
+	align-items: center;
+}
+
+.product-box {
+	display: flex;
+	width: 25em;
+	flex-direction: column;
+	margin: 2.5em;
+}
+.product-box > h2 {
+	margin: 0 0em;
+	font-size: 32px;
+	color: rgb(214, 212, 212);
+}
+.product-box > p {
+	margin: 0;
+	font-size: 19px;
+	color: var(--p-font);
+}
