@@ -24,6 +24,7 @@ body {
 	/* border: 0.2em solid blue; */
 	width: 100%;
 	justify-content: space-between;
+	background-color: var(--bg-color);
 }
 .navbar {
 	display: flex;
@@ -51,7 +52,7 @@ body {
 .placering {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 4em;
+	gap: 2em;
 	margin: 6em 1em 4em 1em;
 }
 .placering >*{
@@ -86,7 +87,25 @@ body {
 	border-radius: 2em;
 }
 .skaparna >* {
-	border: 2px solid black;
-	border-radius: 1em;
+	/* border: 2px solid black; */
+	/* border-radius: 1em; */
 	text-align: center;
+}
+.blå-text span{
+	color: var(--main-color);
+}
+.skaparna-img {
+	border-radius: 50%;
+}
+.skapare-webbsida {
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.placering {
+		grid-template-columns: 1fr;
+	}
+	.skaparna {
+		grid-template-columns: 1fr;
+	}
 }
