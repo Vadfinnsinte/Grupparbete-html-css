@@ -61,17 +61,28 @@ body {
 
 .product-box {
 	display: flex;
-	width: 25em;
+	width: 25vw;
 	flex-direction: column;
-	margin: 2.5em;
+	margin: 5em 2.5em;
 }
 .product-box > h2 {
-	margin: 0 0em;
-	font-size: 32px;
+	margin: 0.4em 0em;
+	font-size: 25px;
 	color: rgb(214, 212, 212);
 }
 .product-box > p {
 	margin: 0;
 	font-size: 19px;
 	color: var(--p-font);
+}
+
+.product-inside {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 60vw;
+
+}
+.product-img, .gif {
+	border-radius: 1em;
 }
