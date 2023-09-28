@@ -46,7 +46,7 @@ body {
 	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
 }
-.logga span {
+span {
 	color: var(--main-color);
 }
 .placering {
@@ -94,18 +94,25 @@ body {
 .blå-text span{
 	color: var(--main-color);
 }
-.skaparna-img {
+.skaparna-img > img {
 	border-radius: 50%;
 }
 .skapare-webbsida {
 	text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.placering {
-		grid-template-columns: 1fr;
+		grid-template-columns: minmax(300px, 1fr);
 	}
 	.skaparna {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+	.skaparna-img{
+		grid-column: 1;
+	}
+	.text{
+		grid-column: 2;
+		background-color: gray;
 	}
 }
