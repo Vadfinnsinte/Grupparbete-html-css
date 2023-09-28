@@ -111,8 +111,29 @@ span {
 	.skaparna-img{
 		grid-column: 1;
 	}
-	.text{
+	.text:nth-child(6){
 		grid-column: 2;
 		background-color: gray;
+		grid-row-start: 1;
 	}
+	.text:nth-child(7){
+		grid-column: 2;
+		background-color: gray;
+		grid-row-start: 2;
+	}
+	.text:nth-child(8){
+		grid-column: 2;
+		background-color: gray;
+		grid-row-start: 3;
+		}
+	.text:nth-child(9){
+			grid-column: 2;
+			background-color: gray;
+			grid-row-start: 4;
+		}
+	.text:nth-child(10){
+			grid-column: 2;
+			background-color: gray;
+			grid-row-start: 5;
+		}
 }
