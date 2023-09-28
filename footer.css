@@ -31,10 +31,25 @@ body {
 	padding: 10px;
 }
 
-.list {
-	color: #686E7A;
+.footer-col {
+	flex: 1;
+	max-width: 100px;
+	margin: 5px;
+	text-align: center;
+
+
 
 }
+
+.list {
+	color: #686E7A;
+	line-height: 30px;
+	font-weight: bold;
+
+
+}
+
+
 
 
 .h4 {
@@ -43,4 +58,17 @@ body {
 	font-style: oblique;
 	font-size: larger;
 
+}
+
+@media screen and (max-width: 768px) {
+
+	.containerf {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-col {
+		max-width: 100%;
+		text-align: center;
+	}
 }
