@@ -1,0 +1,195 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+:root {
+	--bg-color: #313131;
+	--text-color: #686E7A;
+	--main-color: #2AA3D2; 
+	--big-font: 6rem;
+	--p-font: 1.3rem;
+}
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+.head {
+	position: fixed;
+	top: 0;
+	display: flex;
+	padding: 1.5em;
+	/* border: 0.2em solid blue; */
+	width: 100%;
+	justify-content: space-between;
+	background-color: var(--bg-color);
+}
+.navbar {
+	display: flex;
+	gap: 2.5em;
+}
+.navbar a {
+	font-size: 24px;
+	color: var(--text-color);
+}
+.navbar a:hover, .navbar .colored2 {
+	color: var(--main-color);
+}
+.navbar a:hover {
+	/* transition: all ease-in-out;  */
+	/* text-shadow: 5px 50p; */
+	font-size: 25px;
+} 
+.logga {
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+span {
+	color: var(--main-color);
+}
+.placering {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2em;
+	margin: 6em 1em 4em 1em;
+}
+.placering >*{
+	/* height: 15rem; */
+	padding: 1rem;
+}
+.span2 {
+	grid-column: span 2;
+	height: 20rem;
+	/* border: 2px solid #2AA3D2; */
+	/* border: 2px solid #686E7A; */
+	border-radius: 2em;
+	box-shadow: 3px 3px 10px  #242424;
+	color: rgb(194, 191, 191);
+	background-color:#424242; 
+}
+.bild-dekoration {
+	border-radius: 2em;
+	box-shadow: 2px 3px 10px #242424;
+}
+
+.skaparna {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2em;
+	margin-top: 1em;
+	margin-bottom: 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	background-color: #535353;
+	padding: 1.5em;
+	border-radius: 2em;
+}
+.skaparna >* {
+	/* border: 2px solid black; */
+	/* border-radius: 1em; */
+	text-align: center;
+}
+.blå-text span{
+	color: var(--main-color);
+}
+.skaparna-img > img {
+	border-radius: 50%;
+}
+.skapare-webbsida {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.placering {
+		grid-template-columns: minmax(300px, 1fr);
+	}
+	.skaparna {
+		grid-template-columns: 1fr 1fr;
+	}
+	.skaparna-img{
+		grid-column: 1;
+	}
+	.text:nth-child(6){
+		grid-column: 2;
+		background-color: gray;
+		grid-row-start: 1;
+	}
+	.text:nth-child(7){
+		grid-column: 2;
+		background-color: gray;
+		grid-row-start: 2;
+	}
+	.text:nth-child(8){
+		grid-column: 2;
+		background-color: gray;
+		grid-row-start: 3;
+		}
+	.text:nth-child(9){
+			grid-column: 2;
+			background-color: gray;
+			grid-row-start: 4;
+		}
+	.text:nth-child(10){
+			grid-column: 2;
+			background-color: gray;
+			grid-row-start: 5;
+		}
+}
+
+/* Footer css */
+.containerf {
+	background-color: rgb(27, 29, 32);
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/* position: absolute; */
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+}
+
+.footer-col {
+	flex: 1;
+	max-width: 6;
+	margin: 5px;
+	text-align: center;
+
+
+
+}
+
+.list {
+	color: #686E7A;
+	line-height: 30px;
+	font-weight: bold;
+
+
+}
+
+
+
+
+.h4 {
+	margin-bottom: 3px;
+	color: #686E7A;
+	font-style: oblique;
+	font-size: larger;
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.containerf {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-col {
+		max-width: 100%;
+		text-align: center;
+	}
+}
