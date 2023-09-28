@@ -59,9 +59,12 @@ span {
 	/* height: 15rem; */
 	padding: 1rem;
 }
+.bild-dekoration{
+	max-width: auto;
+}
 .span2 {
 	grid-column: span 2;
-	height: 20rem;
+	max-height: 30rem;
 	/* border: 2px solid #2AA3D2; */
 	/* border: 2px solid #686E7A; */
 	border-radius: 2em;
@@ -72,6 +75,10 @@ span {
 .bild-dekoration {
 	border-radius: 2em;
 	box-shadow: 2px 3px 10px #242424;
+}
+
+.skapare-webbsida{
+	font-size: 20px;
 }
 
 .skaparna {
@@ -91,6 +98,10 @@ span {
 	/* border-radius: 1em; */
 	text-align: center;
 }
+.skaparna > .text{
+	background-color: gray;
+	border-radius: 2em;
+}
 .blå-text span{
 	color: var(--main-color);
 }
@@ -101,9 +112,20 @@ span {
 	text-align: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.placering {
 		grid-template-columns: minmax(300px, 1fr);
+	}
+	.placering > div:nth-child(3){
+		grid-row: 4;
+	}
+	.placering > div > img{
+		width: 90vw;
+		height: auto;
+	}
+	.span2{
+		width: 90vw;
+		height: auto;
 	}
 	.skaparna {
 		grid-template-columns: 1fr 1fr;
@@ -157,9 +179,6 @@ span {
 	max-width: 6;
 	margin: 5px;
 	text-align: center;
-
-
-
 }
 
 .list {
@@ -184,7 +203,9 @@ span {
 @media screen and (max-width: 768px) {
 
 	.containerf {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		align-items: center;
 	}
 
