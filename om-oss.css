@@ -82,8 +82,9 @@ span {
 .bild-dekoration {
 	border-radius: 2em;
 	box-shadow: 2px 3px 10px #242424;
+	max-width: 100%;
+    height: auto;
 }
-
 .product-textlink {
 	text-decoration: underline;
 	color: var(--main-color);
