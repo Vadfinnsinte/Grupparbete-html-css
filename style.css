@@ -18,15 +18,17 @@ body {
 	background-color: var(--bg-color);
 	color: var(--text-color);
 }
+
 .head {
 	position: fixed;
 	top: 0;
 	display: flex;
 	padding: 1.5em;
-	/* border: 0.2em solid blue; */
 	width: 100%;
 	justify-content: space-between;
 	background-color: var(--bg-color);
+	
+	
 }
 .navbar {
 	display: flex;
@@ -51,29 +53,48 @@ body {
 .logga span {
 	color: var(--main-color);
 }
+
+/* startsida börjar */
+
 .container{
 	display:grid;
-	grid-template-columns: 1fr minmax(300px, auto);
+	/* grid-template-columns: 1fr minmax(300px, auto); */
+	grid-template-columns: repeat(2, 1fr);
     text-wrap: wrap;
+	height: 98vh;
+	/* margin-left: 14em; */
+	margin: 0 8em;
+	/* margin: auto; */
+	justify-content: center;
+	align-items: center;
 }
 .container > div{
     margin: 5em;
 	margin-top: 7em;
 }
-
-.container > div:nth-child(1){
-	margin-left: 10em;
-	margin-right: -2em;
-	width: 100%;
+.front-img {
+	width: 35vw;
 	height: auto;
 	/* border: 3px dashed cornflowerblue;
-	border-radius: 2em;*/
+	border-radius: 2em; */
+	/* justify-content: center;
+	align-items: center; */
 }
+
+/* .container > div:nth-child(1){ 
+	 margin-left: 10em;
+	margin-right: -2em; 
+	width: 100vw;
+	height: auto;
+	border: 3px dashed cornflowerblue;
+	border-radius: 2em;*/
+/* } */
+
 .container > div:nth-child(2){
     /* width: 30em;
     height: 25em; */
 	padding: 2em;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     border-radius: 2em;
 	/*box-shadow: 5px 4px 9px 1px black;*/
     /* border: 3px dashed lightskyblue;*/
@@ -98,14 +119,15 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 130%;
-	text-wrap: wrap;
+	/* text-wrap: wrap; */
 	margin-top: 2em;
+	max-width: 20em;
 }
 .container-inside{
 	display:flex;
 }
 .container-inside > div{
-	width: 10em;
+	width: 9em;
 	height: 2em;
 	background-color: whitesmoke;
 	color: var(--bg-color);
@@ -122,11 +144,46 @@ body {
 	border: 2px solid var(--main-color);
 }
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 	.container > div:nth-child(2){
 		grid-row: 2;
 	}
+} */
+
+@media (max-width: 1576px) {
+	.container > div > h2 {
+		font-size: 27px;
+	}
+	.container > div > p {
+		max-width: 20em;
+	}
+
+	.container > div >h1 {
+		font-size: 59px;
+	}
 }
+ @media (max-width: 1495px) {
+	.container {
+		margin: auto;
+	}
+	.container > div > p {
+		/* max-width: 20em; */
+	}
+} 
+
+@media (max-width: 1347px) {
+	.container {
+		margin: auto;
+	}
+}
+
+@media (max-width: 1101px) {
+	.container {
+		grid-template-columns: 1fr;
+		margin: 0;
+
+	}
+} 
 
 /* Main-produkt startar  */
 
