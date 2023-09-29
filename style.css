@@ -317,25 +317,3 @@ body {
 		}
 	}
 
-	
-
-/* @media (max-width: 718px) {
-	.main-container {
-		flex-direction: column;
-	
-	}
-	.main-container >* {
-		align-items: center;
-	}
-	.product-img {
-		width: 50vw;
-	}
-	.product-box > h2, .product-box > p {
-		width: 50vw;
-		text-align: center;
-	}
-	.product-box :nth-child(3) {
-		font-size: 20px;
-
-	} */
-}
