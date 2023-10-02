@@ -14,6 +14,7 @@
 	--main-color: #2AA3D2; 
 	--big-font: 6rem;
 	--p-font: 1.3rem;
+	--body-style: 'Urbanist', sans-serif;
 }
 body {
 	background-color: var(--bg-color);
@@ -27,6 +28,7 @@ body {
 	width: 100%;
 	justify-content: space-between;
 	background-color: var(--bg-color);
+	font-family: var(--body-style)
 }
 .navbar {
 	display: flex;
@@ -36,7 +38,7 @@ body {
 	font-size: 24px;
 	color: var(--text-color);
 }
-.navbar a:hover, .navbar .colored2 {
+.navbar a:hover, .navbar .colored {
 	color: var(--main-color);
 }
 .navbar a:hover {
@@ -138,6 +140,38 @@ span {
 .skapare-webbsida {
 	text-align: center;
 }
+/* Footer css */
+.containerf {
+	background-color: rgb(27, 29, 32);
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+}
+
+.footer-col {
+	flex: 1;
+	margin: 5px;
+	text-align: center;
+}
+
+.list {
+	color: #686E7A;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.h4 {
+	margin-bottom: 3px;
+	color: #686E7A;
+	font-style: oblique;
+	font-size: larger;
+
+}
 
 @media screen and (max-width: 768px) {
 	.icons {
@@ -179,7 +213,7 @@ span {
 		margin: 1.5em 0;
 		text-align: center;
 		transform: translateY(-10px);
-		transition: .3 ease;
+		transition: .3s ease;
 	}
 
 	#check:checked~.navbar a {
@@ -187,9 +221,9 @@ span {
 	}
 
 
-	.navbar a, .head .colored {
+	.navbar a, .head > nav > a, .colored {
 		color: whitesmoke;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	
 	.placering {
@@ -247,37 +281,15 @@ span {
 			text-align: center;
 		}
 }
-
-/* Footer css */
-.containerf {
-	background-color: rgb(27, 29, 32);
-	display: flex;
-
-	flex-wrap: wrap;
-	justify-content: space-around;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 10px;
+@media (min-width:1615px){
+	.placering {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
 }
-
-.footer-col {
-	flex: 1;
-	max-width: 6;
-	margin: 5px;
-	text-align: center;
-}
-
-.list {
-	color: #686E7A;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-.h4 {
-	margin-bottom: 3px;
-	color: #686E7A;
-	font-style: oblique;
-	font-size: larger;
-
+@media (min-width:1543px){
+	.placering {
+		margin-left: 2.5em;
+		margin-right: 2.5em;
+	}
 }
