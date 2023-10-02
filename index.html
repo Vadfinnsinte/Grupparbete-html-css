@@ -10,17 +10,25 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;500&family=Oswald:wght@400;500;600&family=PT+Sans&family=Raleway:wght@300;400;600&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400&family=Urbanist:wght@300&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 	<header class="head">
-		<p class="logga"><span>C</span>lickTrip</p>
-		<ul class="navbar">
-			<li><a href="#" class="colored" id="start">Startsida</a></li>
-			<li><a href="#produkt-tag">Produkter</a></li>
-			<li><a href="om-oss.html">Om Oss</a></li>
 
-		</ul>
+		<p class="logga"><span>C</span>lickTrip</p>
+
+		<input type="checkbox" id="check">
+		<label for="check" class="icons">
+			<i class='bx bx-menu' id="menu-icon"></i>
+			<i class='bx bx-x' id="close-icon"></i>
+		</label>
+		<nav class="navbar">
+			<a href="#" class="colored">Startsida</a>
+			<a href="#produkt-tag">Produkter</a>
+			<a href="om-oss.html">Om Oss</a>
+		</nav>
+		
 	</header>
 
 	<main>
@@ -64,6 +72,8 @@
 			och försöker uppfylla dessa krav i varje produkt.</p>
 			</div>
 	</section>
+
+	<!-- footer startar -->
 	<footer>
 
 		<div class="containerf">
